@@ -1,0 +1,1851 @@
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4353
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 110-399-977
+ * Debugger is active!
+ * Debugger PIN: 110-399-977
+127.0.0.1 - - [10/Aug/2025 16:06:45] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 16:06:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 16:06:56] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 16:06:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 16:07:28] "[35m[1mGET /server/aggregated-parameter HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/coder/Desktop/securegenai/server/received_data_node_api.py", line 112, in aggregated_parameter
+    agg_lock.release()
+RuntimeError: release unlocked lock
+127.0.0.1 - - [10/Aug/2025 16:07:29] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 16:07:29] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 16:07:29] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 16:08:22] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [10/Aug/2025 16:08:25] "[35m[1mGET /server/aggregated-parameter HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/coder/Desktop/securegenai/server/received_data_node_api.py", line 112, in aggregated_parameter
+    agg_lock.release()
+RuntimeError: release unlocked lock
+127.0.0.1 - - [10/Aug/2025 16:08:25] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 16:08:25] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 16:08:26] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 16:11:15] "GET /api/fetch-file HTTP/1.1" 200 -
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/__init__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_common.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/__init__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_common.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_common.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/__init__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/__init__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psosx.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psosx.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psosx.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psposix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psposix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psposix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pswindows.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pswindows.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pswindows.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psbsd.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psbsd.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psbsd.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pssunos.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pssunos.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pssunos.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pslinux.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pslinux.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pslinux.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psaix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psaix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psaix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/__init__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_linux.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_connections.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_contracts.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_sunos.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_aix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_aix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_aix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_scripts.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_scripts.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_scripts.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_process_all.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_process_all.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_process_all.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_misc.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_misc.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_misc.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_windows.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_windows.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_windows.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_osx.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_osx.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_osx.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_testutils.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_testutils.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_testutils.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_memleaks.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_memleaks.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_memleaks.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_process.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_process.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_process.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/__main__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/__main__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/__main__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_system.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_system.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_system.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_bsd.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_bsd.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_bsd.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_unicode.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_unicode.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_unicode.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_posix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_posix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_posix.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 110-399-977
+ * Debugger is active!
+ * Debugger PIN: 110-399-977
+127.0.0.1 - - [10/Aug/2025 16:31:05] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 16:31:05] "[33mGET / HTTP/1.1[0m" 404 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 110-399-977
+ * Debugger is active!
+ * Debugger PIN: 110-399-977
+127.0.0.1 - - [10/Aug/2025 18:46:36] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 19:09:56] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 19:28:18] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 19:28:18] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 22:00:57] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [10/Aug/2025 22:01:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 22:01:04] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [10/Aug/2025 22:01:39] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+127.0.0.1 - - [10/Aug/2025 22:02:16] "[33mGET /server/encrypt-parameter HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 22:02:32] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [10/Aug/2025 22:05:02] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Exception ignored in atexit callback: <function _exit_function at 0x7111f7f45870>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4353
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 128-752-771
+ * Debugger is active!
+ * Debugger PIN: 128-752-771
+received
+hashing
+[INFO] scaling weight
+[INFO] Aggregating single client update!
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+return
+127.0.0.1 - - [11/Aug/2025 07:41:05] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 07:41:06] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+Exception ignored in atexit callback: <function _exit_function at 0x78a5148c9870>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+Shutting down cleanly...
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+ * Debugger is active!
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4353
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger PIN: 822-240-556
+ * Debugger is active!
+ * Debugger PIN: 822-240-556
+127.0.0.1 - - [11/Aug/2025 10:35:13] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 10:37:05] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 10:45:59] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Aug/2025 10:46:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Aug/2025 10:48:04] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 10:50:32] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 10:50:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Aug/2025 10:50:40] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 10:50:52] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 10:51:17] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 10:51:44] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 11:05:01] "GET /api/fetch-file HTTP/1.1" 200 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [11/Aug/2025 11:18:04] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 822-240-556
+ * Debugger is active!
+ * Debugger PIN: 822-240-556
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 822-240-556
+ * Debugger is active!
+ * Debugger PIN: 822-240-556
+Content-Type: application/json
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [11/Aug/2025 12:25:57] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4353
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 403-294-421
+ * Debugger is active!
+ * Debugger PIN: 403-294-421
+127.0.0.1 - - [11/Aug/2025 14:53:49] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [11/Aug/2025 14:53:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Aug/2025 14:54:02] "[35m[1mGET /server/aggregated-parameter HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/coder/Desktop/securegenai/server/received_data_node_api.py", line 120, in aggregated_parameter
+    agg_lock.release()
+RuntimeError: release unlocked lock
+127.0.0.1 - - [11/Aug/2025 14:54:03] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 14:54:03] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 14:54:05] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+Content-Type: application/json
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [11/Aug/2025 15:05:45] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Exception ignored in atexit callback: <function _exit_function at 0x763dbb5256c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:2234
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 130-704-360
+ * Debugger is active!
+ * Debugger PIN: 130-704-360
+Exception ignored in atexit callback: <function _exit_function at 0x7898320216c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+Shutting down cleanly...
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:2234
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 568-379-033
+ * Debugger is active!
+ * Debugger PIN: 568-379-033
+Exception ignored in atexit callback: <function _exit_function at 0x7483cb2d56c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+ * Debugger is active!
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:2234
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger PIN: 139-167-103
+ * Debugger is active!
+ * Debugger PIN: 139-167-103
+Exception ignored in atexit callback: <function _exit_function at 0x73bffdca96c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:2234
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 885-413-940
+ * Debugger is active!
+ * Debugger PIN: 885-413-940
+Exception ignored in atexit callback: <function _exit_function at 0x7fcdbce216c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4353
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 885-413-940
+ * Debugger is active!
+ * Debugger PIN: 885-413-940
+127.0.0.1 - - [12/Aug/2025 09:30:44] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [12/Aug/2025 09:30:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2025 09:31:01] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4353
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+127.0.0.1 - - [12/Aug/2025 10:44:43] "GET /api/fetch-file HTTP/1.1" 200 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+127.0.0.1 - - [12/Aug/2025 10:58:00] "GET /api/fetch-file HTTP/1.1" 200 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+127.0.0.1 - - [12/Aug/2025 11:00:47] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2025 11:01:41] "GET /api/fetch-file HTTP/1.1" 200 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+127.0.0.1 - - [12/Aug/2025 11:03:44] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2025 11:04:07] "GET /api/fetch-file HTTP/1.1" 200 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+127.0.0.1 - - [12/Aug/2025 11:05:46] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2025 11:17:27] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2025 11:33:34] "GET /api/fetch-file HTTP/1.1" 200 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 12:26:33] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+127.0.0.1 - - [12/Aug/2025 12:29:01] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 504 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+127.0.0.1 - - [12/Aug/2025 12:33:55] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 504 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 12:33:59] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Exception ignored in atexit callback: <function _exit_function at 0x7ae0d19216c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+Shutting down cleanly...
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4353
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 14:13:23] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+Exception ignored in atexit callback: <function _exit_function at 0x7dcd626a56c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9945
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+127.0.0.1 - - [12/Aug/2025 14:40:07] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2025 14:40:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2025 14:40:13] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2025 14:40:48] "[33mGET / HTTP/1.1[0m" 404 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+Exception ignored in atexit callback: <function _exit_function at 0x70af642216c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+127.0.0.1 - - [12/Aug/2025 14:49:12] "[33mGET / HTTP/1.1[0m" 404 -
+Error processing request: 'NoneType' object has no attribute 'read'
+127.0.0.1 - - [12/Aug/2025 14:50:48] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Error processing request: 'NoneType' object has no attribute 'read'
+127.0.0.1 - - [12/Aug/2025 14:54:37] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 15:10:38] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+127.0.0.1 - - [12/Aug/2025 15:39:53] "[31m[1mPOST /server/aggregated-parameter HTTP/1.1[0m" 400 -
+127.0.0.1 - - [12/Aug/2025 15:40:34] "[31m[1mPOST /server/aggregated-parameter HTTP/1.1[0m" 400 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 15:46:59] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 15:50:17] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 15:57:30] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+received
+hashing
+[INFO] Aggregating single client update!
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+return
+127.0.0.1 - - [12/Aug/2025 16:01:20] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+127.0.0.1 - - [12/Aug/2025 16:09:03] "GET /api/fetch-file HTTP/1.1" 200 -
+Exception ignored in atexit callback: <function _exit_function at 0x78c9f9b256c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/configuration_setup.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/configuration_setup.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/configuration_setup_server.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/configuration_setup_server.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/main.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/main.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/main.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/main.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/main.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+127.0.0.1 - - [12/Aug/2025 17:11:17] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2025 17:11:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2025 17:13:16] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [12/Aug/2025 17:13:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2025 17:13:27] "GET /api/fetch-file HTTP/1.1" 200 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 18:25:02] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Exception ignored in atexit callback: <function _exit_function at 0x79c5a92b96c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 170-341-725
+ * Debugger is active!
+ * Debugger PIN: 170-341-725
+127.0.0.1 - - [13/Aug/2025 08:31:58] "GET /api/fetch-file HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:33:08] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:36:03] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:38:54] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:41:46] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:44:51] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:48:04] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:51:31] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:55:10] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:58:40] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 10:01:36] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [13/Aug/2025 10:05:09] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 832-141-670
+ * Debugger is active!
+ * Debugger PIN: 832-141-670
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 10:33:01] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+Exception ignored in atexit callback: <function _exit_function at 0x7b8b83d516c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+Shutting down cleanly...
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 294-898-743
+ * Debugger is active!
+ * Debugger PIN: 294-898-743
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 821-104-848
+ * Debugger is active!
+ * Debugger PIN: 821-104-848
+Exception ignored in atexit callback: <function _exit_function at 0x7a1642cbd6c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 897-052-260
+ * Debugger is active!
+ * Debugger PIN: 897-052-260
+Exception ignored in atexit callback: <function _exit_function at 0x724e0654d6c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 266-014-152
+ * Debugger is active!
+ * Debugger PIN: 266-014-152
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [13/Aug/2025 22:00:38] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Exception ignored in atexit callback: <function _exit_function at 0x79fcd66cd6c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 625-340-571
+ * Debugger is active!
+ * Debugger PIN: 625-340-571
+Exception ignored in atexit callback: <function _exit_function at 0x7f11b83516c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 100-475-971
+ * Debugger is active!
+ * Debugger PIN: 100-475-971
+Exception ignored in atexit callback: <function _exit_function at 0x7207698056c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 301-416-635
+ * Debugger is active!
+ * Debugger PIN: 301-416-635
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 112-903-224
+ * Debugger is active!
+ * Debugger PIN: 112-903-224
+Exception ignored in atexit callback: <function _exit_function at 0x7408bdee56c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 431-509-401
+ * Debugger is active!
+ * Debugger PIN: 431-509-401
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [14/Aug/2025 09:01:11] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [14/Aug/2025 09:36:10] "POST /node/encrypt-parameter HTTP/1.1" 200 -
