@@ -20,6 +20,8 @@ sudo mkdir -p /etc/cloudflared
 sudo cp ~/.cloudflared/*.yml /etc/cloudflared/
 sudo cp ~/.cloudflared/*.json /etc/cloudflared/
 
+# change .json path in .yml file
+
 sudo cp /home/coder/Desktop/securegenai/server/main-server.service /etc/systemd/system/main-server.service
 
 sudo cp /home/coder/Desktop/securegenai/server/main-cloudflared.service /etc/systemd/system/main-cloudflared.service
