@@ -3,9 +3,6 @@ import sys
 
 ## execute command that needs input
 def run_command(command):
-   
-    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
-        count = float(f.read().strip())
 
     print(f"[Running] \"{command}\"")
 
@@ -33,10 +30,6 @@ def run_command(command):
                 print("Command finished.")
                 break
 
-        count = round(count + 1.16,1)
-        
-        with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "w") as f:
-            f.write(str(count))
     except Exception as e:
         print(f"Unexpected error: {e}")
 
