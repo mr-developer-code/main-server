@@ -1,0 +1,5 @@
+tenseal==0.3.16
+numpy==1.25.2
+flask
+flask_cors
+pexpect

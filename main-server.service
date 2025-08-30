@@ -1,0 +1,18 @@
+[Unit]
+Description=API Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/coder/Desktop/securegenai/server/main.py
+WorkingDirectory=/home/coder/Desktop/securegenai/server
+Restart=always
+RestartSec=3
+
+KillSignal=SIGTERM
+TimeoutStopSec=5
+
+StandardOutput=append:/home/coder/Desktop/securegenai/server/main_api_service.log
+StandardError=append:/home/coder/Desktop/securegenai/server/main_api_service.log
+[Install]
+WantedBy=multi-user.target

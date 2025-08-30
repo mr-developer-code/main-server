@@ -1,0 +1,3616 @@
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4353
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 110-399-977
+ * Debugger is active!
+ * Debugger PIN: 110-399-977
+127.0.0.1 - - [10/Aug/2025 16:06:45] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 16:06:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 16:06:56] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 16:06:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 16:07:28] "[35m[1mGET /server/aggregated-parameter HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/coder/Desktop/securegenai/server/received_data_node_api.py", line 112, in aggregated_parameter
+    agg_lock.release()
+RuntimeError: release unlocked lock
+127.0.0.1 - - [10/Aug/2025 16:07:29] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 16:07:29] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 16:07:29] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 16:08:22] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [10/Aug/2025 16:08:25] "[35m[1mGET /server/aggregated-parameter HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/coder/Desktop/securegenai/server/received_data_node_api.py", line 112, in aggregated_parameter
+    agg_lock.release()
+RuntimeError: release unlocked lock
+127.0.0.1 - - [10/Aug/2025 16:08:25] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 16:08:25] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 16:08:26] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 16:11:15] "GET /api/fetch-file HTTP/1.1" 200 -
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/__init__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_common.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/__init__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_common.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_common.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/__init__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/__init__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psosx.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psosx.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psosx.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psposix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psposix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psposix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pswindows.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pswindows.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pswindows.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psbsd.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psbsd.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psbsd.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pssunos.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pssunos.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pssunos.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pslinux.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pslinux.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_pslinux.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psaix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psaix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/_psaix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/__init__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_linux.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_connections.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_contracts.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_sunos.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_aix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_aix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_aix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_scripts.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_scripts.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_scripts.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_process_all.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_process_all.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_process_all.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_misc.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_misc.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_misc.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_windows.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_windows.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_windows.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_osx.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_osx.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_osx.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_testutils.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_testutils.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_testutils.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_memleaks.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_memleaks.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_memleaks.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_process.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_process.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_process.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/__main__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/__main__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/__main__.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_system.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_system.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_system.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_bsd.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_bsd.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_bsd.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_unicode.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_unicode.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_unicode.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_posix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_posix.py', reloading
+ * Detected change in '/usr/local/lib/python3.10/dist-packages/psutil/tests/test_posix.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 110-399-977
+ * Debugger is active!
+ * Debugger PIN: 110-399-977
+127.0.0.1 - - [10/Aug/2025 16:31:05] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 16:31:05] "[33mGET / HTTP/1.1[0m" 404 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 110-399-977
+ * Debugger is active!
+ * Debugger PIN: 110-399-977
+127.0.0.1 - - [10/Aug/2025 18:46:36] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 19:09:56] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2025 19:28:18] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 19:28:18] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 22:00:57] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [10/Aug/2025 22:01:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 22:01:04] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [10/Aug/2025 22:01:39] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+127.0.0.1 - - [10/Aug/2025 22:02:16] "[33mGET /server/encrypt-parameter HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Aug/2025 22:02:32] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [10/Aug/2025 22:05:02] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Exception ignored in atexit callback: <function _exit_function at 0x7111f7f45870>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4353
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 128-752-771
+ * Debugger is active!
+ * Debugger PIN: 128-752-771
+received
+hashing
+[INFO] scaling weight
+[INFO] Aggregating single client update!
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+return
+127.0.0.1 - - [11/Aug/2025 07:41:05] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 07:41:06] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+Exception ignored in atexit callback: <function _exit_function at 0x78a5148c9870>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+Shutting down cleanly...
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+ * Debugger is active!
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4353
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger PIN: 822-240-556
+ * Debugger is active!
+ * Debugger PIN: 822-240-556
+127.0.0.1 - - [11/Aug/2025 10:35:13] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 10:37:05] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 10:45:59] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Aug/2025 10:46:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Aug/2025 10:48:04] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 10:50:32] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 10:50:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Aug/2025 10:50:40] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 10:50:52] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 10:51:17] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 10:51:44] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 11:05:01] "GET /api/fetch-file HTTP/1.1" 200 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [11/Aug/2025 11:18:04] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 822-240-556
+ * Debugger is active!
+ * Debugger PIN: 822-240-556
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 822-240-556
+ * Debugger is active!
+ * Debugger PIN: 822-240-556
+Content-Type: application/json
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [11/Aug/2025 12:25:57] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4353
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 403-294-421
+ * Debugger is active!
+ * Debugger PIN: 403-294-421
+127.0.0.1 - - [11/Aug/2025 14:53:49] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [11/Aug/2025 14:53:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Aug/2025 14:54:02] "[35m[1mGET /server/aggregated-parameter HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/coder/Desktop/securegenai/server/received_data_node_api.py", line 120, in aggregated_parameter
+    agg_lock.release()
+RuntimeError: release unlocked lock
+127.0.0.1 - - [11/Aug/2025 14:54:03] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 14:54:03] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 14:54:05] "GET /server/aggregated-parameter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+Content-Type: application/json
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [11/Aug/2025 15:05:45] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Exception ignored in atexit callback: <function _exit_function at 0x763dbb5256c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:2234
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 130-704-360
+ * Debugger is active!
+ * Debugger PIN: 130-704-360
+Exception ignored in atexit callback: <function _exit_function at 0x7898320216c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+Shutting down cleanly...
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:2234
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 568-379-033
+ * Debugger is active!
+ * Debugger PIN: 568-379-033
+Exception ignored in atexit callback: <function _exit_function at 0x7483cb2d56c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+ * Debugger is active!
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:2234
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger PIN: 139-167-103
+ * Debugger is active!
+ * Debugger PIN: 139-167-103
+Exception ignored in atexit callback: <function _exit_function at 0x73bffdca96c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:2234
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 885-413-940
+ * Debugger is active!
+ * Debugger PIN: 885-413-940
+Exception ignored in atexit callback: <function _exit_function at 0x7fcdbce216c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4353
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 885-413-940
+ * Debugger is active!
+ * Debugger PIN: 885-413-940
+127.0.0.1 - - [12/Aug/2025 09:30:44] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [12/Aug/2025 09:30:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2025 09:31:01] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4353
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+127.0.0.1 - - [12/Aug/2025 10:44:43] "GET /api/fetch-file HTTP/1.1" 200 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+127.0.0.1 - - [12/Aug/2025 10:58:00] "GET /api/fetch-file HTTP/1.1" 200 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+127.0.0.1 - - [12/Aug/2025 11:00:47] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2025 11:01:41] "GET /api/fetch-file HTTP/1.1" 200 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+127.0.0.1 - - [12/Aug/2025 11:03:44] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2025 11:04:07] "GET /api/fetch-file HTTP/1.1" 200 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+127.0.0.1 - - [12/Aug/2025 11:05:46] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2025 11:17:27] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2025 11:33:34] "GET /api/fetch-file HTTP/1.1" 200 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 12:26:33] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+127.0.0.1 - - [12/Aug/2025 12:29:01] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 504 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+ * Debugger is active!
+ * Debugger PIN: 974-317-912
+127.0.0.1 - - [12/Aug/2025 12:33:55] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 504 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 12:33:59] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Exception ignored in atexit callback: <function _exit_function at 0x7ae0d19216c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+Shutting down cleanly...
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4353
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 14:13:23] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+Exception ignored in atexit callback: <function _exit_function at 0x7dcd626a56c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9945
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+127.0.0.1 - - [12/Aug/2025 14:40:07] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2025 14:40:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2025 14:40:13] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2025 14:40:48] "[33mGET / HTTP/1.1[0m" 404 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+Exception ignored in atexit callback: <function _exit_function at 0x70af642216c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+ * Debugger is active!
+ * Debugger PIN: 179-703-079
+127.0.0.1 - - [12/Aug/2025 14:49:12] "[33mGET / HTTP/1.1[0m" 404 -
+Error processing request: 'NoneType' object has no attribute 'read'
+127.0.0.1 - - [12/Aug/2025 14:50:48] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Error processing request: 'NoneType' object has no attribute 'read'
+127.0.0.1 - - [12/Aug/2025 14:54:37] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 15:10:38] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+127.0.0.1 - - [12/Aug/2025 15:39:53] "[31m[1mPOST /server/aggregated-parameter HTTP/1.1[0m" 400 -
+127.0.0.1 - - [12/Aug/2025 15:40:34] "[31m[1mPOST /server/aggregated-parameter HTTP/1.1[0m" 400 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 15:46:59] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 15:50:17] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 15:57:30] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+received
+hashing
+[INFO] Aggregating single client update!
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+....
+Done
+return
+127.0.0.1 - - [12/Aug/2025 16:01:20] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 600-831-081
+127.0.0.1 - - [12/Aug/2025 16:09:03] "GET /api/fetch-file HTTP/1.1" 200 -
+Exception ignored in atexit callback: <function _exit_function at 0x78c9f9b256c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/configuration_setup.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/configuration_setup.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/configuration_setup_server.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/configuration_setup_server.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/main.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/main.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/main.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/main.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/main.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/send_file_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils_server.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/utils.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/secure_gen_ai_application.zip', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 426-961-359
+127.0.0.1 - - [12/Aug/2025 17:11:17] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2025 17:11:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2025 17:13:16] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [12/Aug/2025 17:13:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2025 17:13:27] "GET /api/fetch-file HTTP/1.1" 200 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [12/Aug/2025 18:25:02] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Exception ignored in atexit callback: <function _exit_function at 0x79c5a92b96c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 170-341-725
+ * Debugger is active!
+ * Debugger PIN: 170-341-725
+127.0.0.1 - - [13/Aug/2025 08:31:58] "GET /api/fetch-file HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:33:08] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:36:03] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:38:54] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:41:46] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:44:51] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:48:04] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:51:31] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:55:10] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 09:58:40] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 10:01:36] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [13/Aug/2025 10:05:09] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 832-141-670
+ * Debugger is active!
+ * Debugger PIN: 832-141-670
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [13/Aug/2025 10:33:01] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+Exception ignored in atexit callback: <function _exit_function at 0x7b8b83d516c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+Shutting down cleanly...
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 294-898-743
+ * Debugger is active!
+ * Debugger PIN: 294-898-743
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 821-104-848
+ * Debugger is active!
+ * Debugger PIN: 821-104-848
+Exception ignored in atexit callback: <function _exit_function at 0x7a1642cbd6c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 897-052-260
+ * Debugger is active!
+ * Debugger PIN: 897-052-260
+Exception ignored in atexit callback: <function _exit_function at 0x724e0654d6c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 266-014-152
+ * Debugger is active!
+ * Debugger PIN: 266-014-152
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [13/Aug/2025 22:00:38] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+Exception ignored in atexit callback: <function _exit_function at 0x79fcd66cd6c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 625-340-571
+ * Debugger is active!
+ * Debugger PIN: 625-340-571
+Exception ignored in atexit callback: <function _exit_function at 0x7f11b83516c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 100-475-971
+ * Debugger is active!
+ * Debugger PIN: 100-475-971
+Exception ignored in atexit callback: <function _exit_function at 0x7207698056c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 301-416-635
+ * Debugger is active!
+ * Debugger PIN: 301-416-635
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 112-903-224
+ * Debugger is active!
+ * Debugger PIN: 112-903-224
+Exception ignored in atexit callback: <function _exit_function at 0x7408bdee56c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 431-509-401
+ * Debugger is active!
+ * Debugger PIN: 431-509-401
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [14/Aug/2025 09:01:11] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [14/Aug/2025 09:36:10] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+Process Process-2:
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+Process Process-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/coder/Desktop/securegenai/server/utils.py", line 7, in run_command
+    with open("/home/coder/Desktop/securegenai/sur_files/progress.txt", "r")as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/coder/Desktop/securegenai/sur_files/progress.txt'
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 324-551-035
+ * Debugger is active!
+ * Debugger PIN: 324-551-035
+127.0.0.1 - - [15/Aug/2025 09:07:38] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [15/Aug/2025 09:07:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [15/Aug/2025 09:08:21] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [15/Aug/2025 09:08:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+Exception ignored in atexit callback: <function _exit_function at 0x7f28116b0d30>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 324-551-035
+ * Debugger is active!
+ * Debugger PIN: 324-551-035
+127.0.0.1 - - [15/Aug/2025 09:18:06] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [15/Aug/2025 09:18:25] "[33mGET /node/encrypted-parameter HTTP/1.1[0m" 404 -
+127.0.0.1 - - [15/Aug/2025 09:18:34] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [15/Aug/2025 09:18:50] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+Exception ignored in atexit callback: <function _exit_function at 0x7f424528cb80>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+Shutting down cleanly...
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 157-078-094
+ * Debugger is active!
+ * Debugger PIN: 157-078-094
+Exception ignored in atexit callback: <function _exit_function at 0x7f3554b0cb80>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger PIN: 327-180-613
+ * Debugger is active!
+ * Debugger PIN: 327-180-613
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+ * Debugger PIN: 785-010-670
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 785-010-670
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger PIN: 734-664-960
+ * Debugger is active!
+ * Debugger PIN: 734-664-960
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+ * Debugger PIN: 644-935-418
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 644-935-418
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 115-597-637
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 115-597-637
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 102-091-345
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 102-091-345
+Exception ignored in atexit callback: <function _exit_function at 0x732aaeaecb80>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 804-000-097
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 804-000-097
+Exception ignored in atexit callback: <function _exit_function at 0x7fd6698c4b80>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+Shutting down cleanly...
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 924-324-434
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 924-324-434
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+ * Debugger is active!
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger PIN: 723-706-756
+ * Debugger is active!
+ * Debugger PIN: 723-706-756
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger PIN: 264-185-813
+ * Debugger is active!
+ * Debugger PIN: 264-185-813
+127.0.0.1 - - [25/Aug/2025 11:26:39] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [25/Aug/2025 11:26:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [25/Aug/2025 18:37:14] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2025 18:39:31] "GET /api/fetch-file HTTP/1.1" 200 -
+Exception ignored in atexit callback: <function _exit_function at 0x7ac1dac44b80>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 108-410-181
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 108-410-181
+127.0.0.1 - - [26/Aug/2025 07:46:54] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [26/Aug/2025 07:46:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2025 07:49:39] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2025 08:18:30] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2025 08:50:01] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2025 09:17:32] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2025 10:21:44] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2025 10:21:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+Exception ignored in atexit callback: <function _exit_function at 0x7851d6608b80>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 255-057-024
+ * Debugger is active!
+ * Debugger PIN: 255-057-024
+127.0.0.1 - - [26/Aug/2025 10:51:13] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [26/Aug/2025 10:51:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2025 14:37:26] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [26/Aug/2025 14:37:34] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2025 14:37:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+Exception ignored in atexit callback: <function _exit_function at 0x7708d2444b80>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 101-830-862
+ * Debugger is active!
+ * Debugger PIN: 101-830-862
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [26/Aug/2025 15:57:45] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+127.0.0.1 - - [26/Aug/2025 15:58:10] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2025 15:58:17] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2025 15:58:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2025 15:58:40] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2025 16:02:29] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2025 16:02:52] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [26/Aug/2025 16:04:59] "GET /api/fetch-file HTTP/1.1" 200 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [26/Aug/2025 17:11:41] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [26/Aug/2025 17:14:38] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [26/Aug/2025 17:19:26] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+Exception ignored in atexit callback: <function _exit_function at 0x702cab644b80>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+ * Detected change in '/home/coder/Desktop/securegenai/server/apis/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/apis/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/apis/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/apis/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/apis/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/apis/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+127.0.0.1 - - [28/Aug/2025 15:20:17] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [28/Aug/2025 15:20:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [28/Aug/2025 15:29:08] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [28/Aug/2025 15:32:24] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [28/Aug/2025 15:35:00] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+ * Restarting with watchdog (inotify)
+  File "/home/coder/Desktop/securegenai/server/received_data_node_api.py", line 123
+    if fed_avg
+              ^
+SyntaxError: expected ':'
+Command finished.
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+Exception ignored in atexit callback: <function _exit_function at 0x7ad54ddc0b80>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+Exception ignored in atexit callback: <function _exit_function at 0x753bb4f44b80>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+127.0.0.1 - - [28/Aug/2025 16:17:19] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [28/Aug/2025 16:17:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [28/Aug/2025 16:20:03] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2025 16:20:55] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+ * Debugger is active!
+ * Debugger PIN: 453-496-908
+127.0.0.1 - - [28/Aug/2025 17:53:10] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2025 17:55:41] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 276-811-565
+ * Debugger is active!
+ * Debugger PIN: 276-811-565
+127.0.0.1 - - [28/Aug/2025 18:09:24] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 504 -
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [28/Aug/2025 18:09:35] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+127.0.0.1 - - [28/Aug/2025 18:12:58] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [28/Aug/2025 18:12:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [28/Aug/2025 18:13:06] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [28/Aug/2025 18:13:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [28/Aug/2025 18:19:50] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2025 18:20:46] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [28/Aug/2025 18:29:30] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 135-180-309
+ * Debugger is active!
+ * Debugger PIN: 135-180-309
+Error processing request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [28/Aug/2025 19:28:29] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 500 -
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Detected change in '/home/coder/Desktop/securegenai/server/received_data_node_api.py', reloading
+ * Restarting with watchdog (inotify)
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 135-180-309
+ * Debugger is active!
+ * Debugger PIN: 135-180-309
+127.0.0.1 - - [28/Aug/2025 19:40:04] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2025 19:40:37] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2025 19:40:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [28/Aug/2025 21:21:04] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2025 21:23:04] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [28/Aug/2025 21:29:05] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [28/Aug/2025 21:40:11] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [28/Aug/2025 21:41:48] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [28/Aug/2025 21:47:11] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [28/Aug/2025 21:50:27] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [28/Aug/2025 22:15:03] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2025 22:16:00] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 842-516-271
+ * Debugger is active!
+ * Debugger PIN: 842-516-271
+127.0.0.1 - - [28/Aug/2025 22:28:24] "[31m[1mGET /node/encrypt-parameter HTTP/1.1[0m" 405 -
+127.0.0.1 - - [28/Aug/2025 22:28:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [28/Aug/2025 22:32:33] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [28/Aug/2025 22:35:49] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2025 22:36:39] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 07:54:27] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 07:54:53] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [29/Aug/2025 07:54:58] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [29/Aug/2025 07:54:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [29/Aug/2025 07:55:03] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 07:55:11] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 07:55:40] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [29/Aug/2025 07:55:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [29/Aug/2025 07:57:20] "GET /api/fetch-file HTTP/1.1" 200 -
+Exception ignored in atexit callback: <function _exit_function at 0x7a0f1b444b80>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+ * Debugger is active!
+ * Debugger PIN: 938-956-807
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 938-956-807
+127.0.0.1 - - [29/Aug/2025 08:12:18] "GET /api/fetch-file HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:17:17] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:19:17] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:21:17] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:23:18] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:25:18] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:27:18] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:29:19] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:31:19] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:33:20] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:35:20] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:37:21] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:39:21] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:41:22] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:43:22] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:45:26] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:47:27] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:49:27] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:51:28] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:53:28] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:55:29] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:57:29] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 08:59:30] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:01:30] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:03:31] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:05:31] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:07:32] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:09:33] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:11:35] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:13:36] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:15:37] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:17:37] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:19:38] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:21:40] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:23:41] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:25:42] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:27:43] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:29:44] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:31:45] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:33:46] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:35:47] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:37:48] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:39:49] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:41:50] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:43:51] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:45:52] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:47:53] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:49:54] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:51:55] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:53:57] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:55:58] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 09:58:00] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:00:02] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:02:03] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:04:04] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:06:05] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:08:06] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:10:07] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:12:09] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:14:10] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:16:11] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:18:12] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:20:13] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:22:14] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:24:15] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:26:17] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:28:18] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:30:19] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:32:20] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:34:21] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:36:22] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:38:23] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:40:24] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:42:25] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 10:44:26] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 14:14:50] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 14:16:50] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 14:18:51] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 14:18:51] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 14:19:09] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 14:19:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [29/Aug/2025 14:19:11] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 14:20:52] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 14:22:53] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [29/Aug/2025 14:24:10] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025 14:24:55] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+Exception ignored in atexit callback: <function _exit_function at 0x7a7b84398b80>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home/coder/Desktop/securegenai/server/main.py", line 9, in cleanup
+    sys.exit(0)
+SystemExit: 0
+Shutting down cleanly...
+Shutting down cleanly...
+Shutting down cleanly...
+[Running] "sudo python3 send_file_api.py"
+bash -lc "sudo python3 send_file_api.py"
+ * Serving Flask app 'send_file_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3035
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+[Running] "sudo python3 received_data_node_api.py"
+bash -lc "sudo python3 received_data_node_api.py"
+ * Serving Flask app 'received_data_node_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4313
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 129-088-935
+ * Debugger is active!
+ * Debugger PIN: 129-088-935
+127.0.0.1 - - [30/Aug/2025 07:10:45] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [30/Aug/2025 07:12:46] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [30/Aug/2025 07:14:46] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [30/Aug/2025 07:15:19] "[35m[1mPOST /node/encrypt-parameter HTTP/1.1[0m" 504 -
+received
+hashing
+[INFO] Aggregating single client update!
+127.0.0.1 - - [30/Aug/2025 07:15:41] "POST /node/encrypt-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [30/Aug/2025 07:16:47] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [30/Aug/2025 07:19:10] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [30/Aug/2025 07:21:48] "GET /server/aggregated-parameter HTTP/1.1" 200 -
+127.0.0.1 - - [30/Aug/2025 07:24:07] "GET /server/aggregated-parameter HTTP/1.1" 200 -
